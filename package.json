@@ -17,8 +17,8 @@
     "prebuild": "rimraf build",
     "build": "react-scripts build",
     "now-build": "npm run build",
-    "prestart": "NODE_ENV=production npm run lint && npm run build",
-    "start": "serve ./build",
+    "prestart": "npm run lint && npm run build",
+    "start": "cross-env NODE_ENV=production serve ./build",
     "poststart": "rimraf .env"
   },
   "dependencies": {
@@ -42,6 +42,7 @@
     "@babel/preset-react": "^7.7.4",
     "babel-eslint": "^11.0.0-beta.1",
     "concurrently": "^4.1.2",
+    "cross-env": "^6.0.3",
     "eslint": "^6.7.2",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-jsx": "^7.0.0",
