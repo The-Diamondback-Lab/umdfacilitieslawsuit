@@ -7,9 +7,11 @@ plugins:
   - react
   - jsx-a11y
 parserOptions:
-  ecmaVersion: 8
+  ecmaVersion: 6
   sourceType: module
+  requireConfigFile: true
   ecmaFeatures:
+    impliedStrict: true
     jsx: true
 rules:
   # Possible Error
@@ -148,6 +150,9 @@ rules:
   semi-style: error
   # React
   react/prop-types: off
+  react/jsx-fragments: off
+  react/jsx-handler-names: off
+  react/no-did-update-set-state: off
 env:
   node: true
   es6: true
