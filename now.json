@@ -4,15 +4,6 @@
   "public": true,
   "alias": "umdfacilitieslawsuit.dbknews.com",
   "scope": "the-diamondback-lab",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
   "regions": [
     "iad1"
   ],
