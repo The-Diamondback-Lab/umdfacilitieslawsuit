@@ -1,7 +1,11 @@
 ---
-extends: eslint:recommended
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:jsx-a11y/recommended
 plugins:
   - react
+  - jsx-a11y
 parserOptions:
   ecmaVersion: 8
   sourceType: module
@@ -100,6 +104,7 @@ rules:
   func-style:
     - error
     - declaration
+    - allowArrowFunctions: true
   implicit-arrow-linebreak:
     - error
     - beside
@@ -141,6 +146,8 @@ rules:
   semi: error
   semi-spacing: error
   semi-style: error
+  # React
+  react/prop-types: off
 env:
   node: true
   es6: true

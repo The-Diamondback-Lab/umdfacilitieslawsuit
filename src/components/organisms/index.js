@@ -1,9 +1,9 @@
 // Components
-import Footer from './Footer'
-import Gallery from './Gallery'
-import Landing from './Landing'
-import Navigation from './Navigation'
-import Story from './Story'
+import Footer from './Footer';
+import Gallery from './Gallery';
+import Landing from './Landing';
+import Navigation from './Navigation';
+import Story from './Story';
 
 /**
  * @file Organism components
@@ -11,4 +11,4 @@ import Story from './Story'
  * @author Lexus Drumgold <lex@lexusdrumgold.design>
  */
 
-export { Footer, Gallery, Landing, Navigation, Story }
+export { Footer, Gallery, Landing, Navigation, Story };

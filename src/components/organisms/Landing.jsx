@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-import * as React from 'react'
+import * as React from 'react';
 
 /**
  * Landing section class. Renders the landing section, a full page section with
@@ -12,7 +12,8 @@ export default class Landing extends React.Component {
    *
    * @return {HTMLDivElement} div containing the landing section content
    */
-  render = () => {
+  // eslint-disable-next-line class-methods-use-this
+  render() {
     return (
       <div className='landing' id='landing'>
         <div className='container'>
@@ -20,7 +21,7 @@ export default class Landing extends React.Component {
             <h1>
               The story behind a $3 million racial discrimination lawsuit at UMD
             </h1>
-            <h2>"Maryland has wrecked my life"</h2>
+            <h2>&quot;Maryland has wrecked my life&quot;</h2>
           </div>
 
           <div className='credit'>
@@ -44,6 +45,6 @@ export default class Landing extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

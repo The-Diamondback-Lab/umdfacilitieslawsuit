@@ -1,15 +1,15 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable no-undef */
 
-import * as React from 'react'
+import * as React from 'react';
 
 // components
-import { Image } from '../atoms'
-import { Gallery } from '../organisms'
+import { Image } from '../atoms';
+import { Gallery } from '../organisms';
 
 export default class Section extends React.Component {
-  render = () => {
-    const { id, heading, content } = this.props
+  render() {
+    const { id, heading, content } = this.props;
 
     return (
       <React.Fragment>
@@ -28,7 +28,7 @@ export default class Section extends React.Component {
                     dangerouslySetInnerHTML={{ __html: c.p }}
                     key={`content-${i}`}
                   />
-                )
+                );
               } else if (c.blockquote) {
                 return (
                   <blockquote
@@ -36,18 +36,16 @@ export default class Section extends React.Component {
                     dangerouslySetInnerHTML={{ __html: c.blockquote }}
                     key={`content-${i}`}
                   />
-                )
-              } else {
-                if (c.img instanceof Array) {
-                  return <Gallery images={c.img} key={`content-${i}`} />
-                } else if (c.img instanceof Object) {
-                  return <Image {...c.img} key={`content-${i}`} />
-                }
+                );
+              } else if (c.img instanceof Array) {
+                return <Gallery images={c.img} key={`content-${i}`} />;
+              } else if (c.img instanceof Object) {
+                return <Image {...c.img} key={`content-${i}`} />;
               }
             })}
           </div>
         </div>
       </React.Fragment>
-    )
+    );
   }
 }

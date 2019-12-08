@@ -1,5 +1,5 @@
 // Components
-import Section from './Section'
+import Section from './Section';
 
 /**
  * @file Template components
@@ -7,4 +7,4 @@ import Section from './Section'
  * @author Lexus Drumgold <lex@lexusdrumgold.design>
  */
 
-export { Section }
+export { Section };

@@ -1,5 +1,5 @@
 // Components
-import Image from './Image'
+import Image from './Image';
 
 /**
  * @file Atom components
@@ -7,4 +7,4 @@ import Image from './Image'
  * @author Lexus Drumgold <lex@lexusdrumgold.design>
  */
 
-export { Image }
+export { Image };
