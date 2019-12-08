@@ -49,7 +49,7 @@ export default class Landing extends React.Component {
 
                   return <a
                     key={`author-${i}`}
-                    href={`https://www.dbknews.com/authors/${author.name}`}
+                    href={`https://www.dbknews.com/authors/${author.id}`}
                     target='_blank'
                     rel='noopener noreferrer'>
                     {authorDisplayString}
