@@ -25,9 +25,17 @@ export default class SocialLinks extends React.Component {
             href='https://lexusdrumgold.design/'
             target='_blank'
             rel='noopener noreferrer'
-            className='copyright-lex'
+            className='credit-developer'
           >
             Designed and Developed by Lexus Drumgold
+          </a>
+
+          <a
+            href='https://github.com/fishnal'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='credit-developer'>
+            Maintained by Vishal Patel
           </a>
         </div>
       </div>
