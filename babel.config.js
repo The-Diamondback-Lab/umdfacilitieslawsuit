@@ -5,7 +5,7 @@
  */
 
 module.exports = api => {
-  api.cache(true)
+  api.cache(true);
 
   return {
     ignore: [
@@ -24,5 +24,5 @@ module.exports = api => {
       '@babel/preset-env',
       '@babel/preset-react'
     ]
-  }
-}
+  };
+};
