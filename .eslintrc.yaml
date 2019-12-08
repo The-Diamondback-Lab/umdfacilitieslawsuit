@@ -1,9 +1,12 @@
 ---
 extends: eslint:recommended
+plugins:
+  - react
 parserOptions:
   ecmaVersion: 8
   sourceType: module
-  ecmaFeatures: {}
+  ecmaFeatures:
+    jsx: true
 rules:
   # Possible Error
   no-await-in-loop: error
@@ -141,3 +144,4 @@ rules:
 env:
   node: true
   es6: true
+  browser: true
