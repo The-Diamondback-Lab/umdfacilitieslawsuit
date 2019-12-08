@@ -11,7 +11,7 @@
   },
   "scripts": {
     "lint": "eslint ./src/*.js ./src/**/*.js ./src/components/**/*.jsx --fix",
-    "predev": "NODE_ENV=development cp .env.development .env",
+    "predev": "gulp copyDevEnv",
     "dev": "react-scripts start",
     "postdev": "rimraf .env",
     "prebuild": "rimraf build",
@@ -53,8 +53,10 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.2",
     "node-sass": "^4.13.0",
     "now": "^16.6.2",
+    "rimraf": "^3.0.0",
     "serve": "^11.1.0"
   },
   "browserslist": {
