@@ -13,5 +13,6 @@ deploy:
   secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   bucket: "umdfacilitieslawsuit.dbknews.com"
   local_dir: build
+  skip_cleanup: true
 after_deploy:
   - echo "Static site deployed"
