@@ -9,10 +9,11 @@ export default class Image extends React.Component {
 
     if (url) {
       const id = url.replace('/assets/images/', '').replace('.jpg', '');
+      let newUrl = process.env.PUBLIC_URL + url;
 
       return (
         <figure id={id} className='section-img'>
-          <img src={url} alt={caption} />
+          <img src={newUrl} alt={caption} title={process.env.PUBLIC_URL}/>
           <figcaption>
             <p
               className='caption'

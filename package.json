@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/The-Diamondback-Lab/umdfacilitieslawsuit"
   },
+  "homepage": "./",
   "scripts": {
     "lint": "eslint ./src/*.js ./src/**/*.js ./src/components/**/*.jsx --fix",
     "predev": "gulp copyDevEnv",
