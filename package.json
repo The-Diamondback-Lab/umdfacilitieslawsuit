@@ -31,7 +31,7 @@
     "react-router-dom": "^5.0.1",
     "react-router-ga": "^1.0.0",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "3.1.1",
+    "react-scripts": "^3.3.0",
     "reactn": "^2.2.4"
   },
   "devDependencies": {
