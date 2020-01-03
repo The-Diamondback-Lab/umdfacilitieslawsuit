@@ -4,7 +4,6 @@ node_js:
 branches:
   only:
     - master
-    - staging
 before_deploy:
   - npm run build
 deploy:
